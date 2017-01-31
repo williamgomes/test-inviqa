@@ -13,3 +13,7 @@ bootstrap/cache/
 
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
 .rocketeer/
+
+
+# ignore .idea folder and containing files created by phpstorm
+.idea/
