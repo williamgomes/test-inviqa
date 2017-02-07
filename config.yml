@@ -1,0 +1,21 @@
+settings:
+    financial_year: 2017  # <= for which year the system has to generate the output
+    timezone: 'Europe/Berlin' # <= default timezone for whole application
+    report_type:  # <= what type of report we want to generate
+        csv:   # <= for now we want to generate CSV report
+            header: [Month of Year, Day of Payment]
+            class: Willy\Writer\CsvWriter  # <= Class namespace for CSV report type
+    data_type:
+        salary:
+            class: Willy\Processor\SalaryDateProcessor # <= full name of class which will implement AbstractDueDateProcessor class
+            name: salary # <= name of the process
+            default_date: last day of this month # <=  default date of salary, which is last day of month
+            fallback_date: last weekday # <= if default date does not meet the condition, go for defined fallback
+            valid_days: [1,2,3,4,5] #<= only allowed to pay on weekdays
+
+        bonus:
+            class: Willy\Processor\BonusDateProcessor # <= full name of class which will implement AbstractDueDateProcessor class
+            name: bonus # <= name of the process
+            default_date: 15 # <= default date of salary, which is 15th of month
+            fallback_date: next wednesday # <= if default date does not meet the condition, go for defined fallback
+            valid_days: [1,2,3,4,5] #<= only allowed to pay on weekdays
