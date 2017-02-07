@@ -17,3 +17,7 @@ bootstrap/cache/
 
 # ignore .idea folder and containing files created by phpstorm
 .idea/
+.idea/*
+
+# ignore any .csv file from report
+*.csv
