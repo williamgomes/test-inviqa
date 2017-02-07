@@ -9,20 +9,6 @@ class DataFormatArray
 {
 
     /**
-     * @var array
-     */
-    private $_DueDatesColl;
-
-    /**
-     * DataFormatArray constructor.
-     */
-    public function __construct()
-    {
-        $this->_DueDatesColl = array();
-    }
-
-
-    /**
      * @param \DateTime $date
      * @return array
      */
@@ -35,7 +21,7 @@ class DataFormatArray
      * @param \DateTime $date
      * @return string
      */
-    private function formatMonthOfYear(\DateTime $date)
+    public function formatMonthOfYear(\DateTime $date)
     {
         return $date->format("M, Y");
     }
@@ -44,7 +30,7 @@ class DataFormatArray
      * @param \DateTime $date
      * @return string
      */
-    private function formatDayOfPayment(\DateTime $date)
+    public function formatDayOfPayment(\DateTime $date)
     {
         return $date->format("d-M-Y");
     }
