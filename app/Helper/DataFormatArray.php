@@ -1,8 +1,6 @@
 <?php
 namespace Willy\Helper;
 
-use Willy\Helper\DataFormatInterface;
-
 /**
  * Class DataFormatArray
  * @package Willy\Helper
