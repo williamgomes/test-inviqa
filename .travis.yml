@@ -1,7 +1,7 @@
 language: php
 before_script:
 - curl -s http://getcomposer.org/installer | php
-- sudo apt-get install php-xdebug
+- sudo apt-get install php5-xdebug
 - sudo apt-get -y install php7.0-mbstring
 - php composer.phar install
 php:
