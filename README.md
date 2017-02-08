@@ -2,4 +2,6 @@
 <p align="center">
 [![Build Status](https://travis-ci.org/williamgomes/test-inviqa.svg?branch=master)](https://travis-ci.org/williamgomes/test-inviqa)
 </p>
+<p align="center">
+<a href="https://travis-ci.org/williamgomes/test-inviqa"><img src="https://travis-ci.org/williamgomes/test-inviqa.svg?branch=master" alt="Build Status"></a>
 <p align="center">===========================</p>
